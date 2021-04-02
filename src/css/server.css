@@ -1,0 +1,69 @@
+/* ProximityChat */
+
+
+.title {
+
+    position: absolute;
+    width: 588px;
+    height: 103px;
+    left: 426px;
+    top: 261px;
+
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 86px;
+    line-height: 103px;
+
+    color: #FFFFFF;
+}
+
+.server-name {
+    position: absolute;
+    width: 588px;
+    height: 29px;
+    left: 426px;
+    top: 410px;
+
+    font-family: "Roboto B", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.search-text {
+    position: absolute;
+
+    left: 3.87%;
+    right: 25.97%;
+    top: 30.36%;
+    bottom: 32.14%;
+
+    font-family: Roboto, serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #4E717C;
+
+    opacity: 0.4;
+}
+
+.search-box {
+    position: absolute;
+    width: 362px;
+    height: 56px;
+    left: 539px;
+    top: 484px;
+
+    background: #242C37;
+    border-radius: 15px;
+}
