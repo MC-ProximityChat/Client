@@ -1,13 +1,25 @@
 import React from "react";
+import {makeStyles, Typography} from "@material-ui/core";
 
 interface TitleProps {
     title: string;
 }
 
-export const Title: React.FC<TitleProps> = () => {
-    return (
-        <div>
+const useStyles = makeStyles({
+    titleStyle: {
+        fontSize: '86px',
+        color: "white",
+        fontStyle: "normal",
+        marginTop: "40px",
+        marginBottom: "30px"
+    },
+});
 
-        </div>
+export const Title: React.FC<TitleProps> = ({title}) => {
+    const classes = useStyles();
+    return (
+        <Typography className={classes.titleStyle} variant="h1">
+            { title }
+        </Typography>
     )
 }
