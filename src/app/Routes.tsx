@@ -2,8 +2,8 @@ import React from "react";
 
 import { Route, Switch } from "react-router-dom";
 
-import { Server } from "./pages/server/Server"
-import { About } from "./pages/about/About"
+import { Server } from "./pages/Server"
+import { About } from "./pages/About"
 import { Home } from "./pages/Home";
 
 interface RoutesProps {}

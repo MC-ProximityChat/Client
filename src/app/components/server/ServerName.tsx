@@ -1,16 +1,23 @@
 import React from "react";
-import {makeStyles, Typography} from "@material-ui/core";
+import {Container, makeStyles, Typography} from "@material-ui/core";
 
 interface ServerNameProps {
     name: string
 }
 
 const useStyles = makeStyles({
-    style: {
+    serverStyle: {
         fontSize: '24px',
         color: "white",
         fontStyle: "normal",
         fontWeight: "bold",
+        marginBottom: "50px"
+    },
+    style: {
+        fontSize: '22px',
+        color: "white",
+        fontStyle: "normal",
+        fontWeight: "lighter",
         marginBottom: "50px"
     },
 });
@@ -18,6 +25,9 @@ const useStyles = makeStyles({
 export const ServerName: React.FC<ServerNameProps> = ({name}) => {
     const classes = useStyles();
     return (
-        <Typography className={classes.style} variant={'h3'}> { name }</Typography>
+        <span>
+            <Typography className={classes.style} variant={'h3'} component={"span"}> You are connecting to </Typography> <Typography className={classes.serverStyle} variant={'h3'} component={"span"}> { name }</Typography>
+            <div style={{marginBottom: "50px"}}> </div>
+        </span>
     )
 }
